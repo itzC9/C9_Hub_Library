@@ -4,9 +4,9 @@ function C9:CreateWindow(title)
     local Window = {}
     Window.title = title
     Window.tabs = {}
-    Window.keybind = Enum.KeyCode.F4
+--[[    Window.keybind = Enum.KeyCode.F4
     Window.draggable = true
-    Window.minimizable = true
+    Window.minimizable = true]]--
 
     function Window:CreateTab(tabName)
         local Tab = {}
@@ -57,7 +57,7 @@ function C9:CreateWindow(title)
         return Tab
     end
 
-    function Window:SetKeybind(key)
+--[[    function Window:SetKeybind(key)
         Window.keybind = key
     end
 
@@ -69,6 +69,6 @@ function C9:CreateWindow(title)
         Window.minimizable = state
     end
     return Window
-end
+end]]--
 
 return C9
